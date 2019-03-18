@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // document.getElementById('test').classList.add('te');
+    </script>
+</head>
+<body>
+
+    <duv id="div1" class="div-class">DIV 태그</duv>
+    <input type="text" id="input1" value="jay" />
+    
+    
+<script>
+const div1el = document.getElementById('div1');
+const input1 = document.getElementById('input1');
+
+console.log(div1el.hasAttribute('id'));
+console.log(div1el.getAttribute('id'));
+console.log(div1el.id);
+
+div1el.removeAttribute('id');
+console.log(div1el.id);
+div1el.setAttribute('id','new-id');
+console.log(div1el.id);
+
+div1el.id = 'new-id-2';
+console.log(div1el.getAttribute('id'));
+
+console.log(div1el.getAttribute('class'));
+console.log(div1el.class);
+console.log(div1el.className);
+
+
+if (div1el.className == 'div-class') {
+    console.log('존재');
+}
+
+div1el.setAttribute('class','new-div-class');
+console.log(div1el.className);
+div1el.className = 'test';
+console.log(div1el.getAttribute('value'));
+
+</script>
+
+</body>
+</html>
