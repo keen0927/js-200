@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+jS 200
+# 106
+
+<p>인자로 대입되 객체들을 하나로 병합함</p>
+<p>주의 : 첫 번쨰 인자로 대입된 객체를 기준으로 병합</p>
+
+<script>
+// Object.assing(반환될객체,.. 병합될 다른 객체들);
+
+const obj1 = {one:1, two:2, three: 3};
+const obj2 = {name: 'keen', age: 37, address: 'seoul'};
+const obj3 = {friends: ['keen','minty','elva',]};
+
+const newObj1 = Object.assign({}, obj1);
+const newObj2 = Object.assign({}, obj1, obj2);
+
+console.log(newObj1);
+console.log(newObj2);
+newObj1.four = 4;
+console.log(newObj1);
+
+const newObj3 = Object.assign(obj1, obj2, obj3);
+console.log(newObj3);
+</script>
+
+</body>
+</html>
