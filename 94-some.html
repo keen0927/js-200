@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>jS 200 # 94</h1>
+
+
+
+<script>
+const arr = [
+    {id: 0, name: 'keen', age: 6},
+    {id: 1, name: 'elva', age: 3},
+    {id: 2, name: 'minty', age: 4},
+    {id: 3, name: 'sil', age: 2},
+]
+
+const isKeenHere = arr.some(el => el.name == 'keen');
+const olderThanSix = arr.some(el => el.age > 6);
+
+console.log(isKeenHere);
+console.log(olderThanSix);
+
+</script>
+</body>
+</html>
