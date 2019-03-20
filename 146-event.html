@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+</head>
+<body>
+        <div id="test">
+                <ul class="test-ul">
+                    <li>ddd</li>
+                </ul>
+            </div>
+            <div id="test2">
+                <ul class="test-ul">
+                    <li>ddd</li>
+                </ul>
+            </div>        
+
+    <script>
+        // const inputContainer = document.getElementById('input-container');
+        var testTarget = document.getElementById('test');
+        const ddd = testTarget.querySelector('.test-ul');
+
+        ddd.addEventListener('click', e => {
+            console.log('111');
+        });
+
+    </script>
+
+</body>
+</html>

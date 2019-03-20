@@ -21,9 +21,11 @@ const arr = [
 
 const isKeenHere = arr.some(el => el.name == 'keen');
 const olderThanSix = arr.some(el => el.age > 6);
+const testFilter = arr.filter(el => el.age > 3);
 
 console.log(isKeenHere);
 console.log(olderThanSix);
+console.log(testFilter);
 
 </script>
 </body>
