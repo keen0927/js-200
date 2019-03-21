@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p {
+            border: 1px solid #000;
+        }
+        span { border: 1px solid red};
+    </style>
+</head>
+<body>
+    <p>
+        일반적인 글
+        <span id="prevent">이벤트를 막는 글</span>
+        <br>
+        일반적인 글2
+    </p>
+
+    <script>
+        
+        const normalPEL = document.querySelector('p');
+        const eventPreventedEl = document.querySelector('#prevent');
+        normalPEL.addEventListener("click", function(){
+            console.log('클릭스');
+        });
+
+        eventPreventedEl.addEventListener('click',function(event){
+            console.log('이벤트를 막즈아');
+            // event.stopPropagation();
+        });
+
+
+    </script>
+
+</body>
+</html>

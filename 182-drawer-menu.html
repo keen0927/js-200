@@ -19,6 +19,13 @@
     </div>
 
     <script>
+
+        function ThisTest(el) {
+            
+            console.log(el);
+        }
+        ThisTest(document.getElementById('drawer-opner'));
+
         function Drawer(el, open = false) {
             this.el = el;
             this.isOpen = open;
