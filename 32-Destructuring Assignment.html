@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>jS 200 # 32</h1>
+
+<script>
+    var obj = {a:undefined, b:2, c:30, d:44, e:5};
+
+    var {a, c} = obj;
+
+    // console.log(a);
+
+    // var {a:newA=10, f:newF=5} = obj;
+
+    // console.log(f);
+
+    var {a:newA=10, f:newF=5} = obj;
+    console.log(newA);
+    console.log(newF);
+
+    var arr = [1,2,30,44,5];
+
+    var [b,c, ...rest] = arr;
+
+    console.log(rest);
+
+    var [a=10, f=9] = [1];
+    console.log(a);
+    console.log(f);
+</script>
+
+</body>
+</html>

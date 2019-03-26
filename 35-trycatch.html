@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>jS 200 # 35</h1>
+
+<script>
+    // function checkNumber(val) {
+    //     if (typeof val !== 'number') throw '유효하지 않은 값이다';
+    //     console.log('숫자형');
+    // }
+
+    // checkNumber(100);
+    // checkNumber('100');
+
+    function checkNumber(val) {
+        if (typeof val !== 'number') throw '유효하지 않은 값입니다.';
+        console.log('숫자형 값으로 확인되었습니다.');
+    }
+
+    try {
+        checkNumber(100);
+        checkNumber('Wrong type');
+    } catch(e) {
+        console.log('에러발생 : ',e);
+    } finally {
+        console.log('완료');
+    }
+</script>
+
+</body>
+</html>
