@@ -7,22 +7,32 @@
     <title>Document</title>
 </head>
 <body>
-<h1>jS 200 # 39</h1>
+<h1>jS 200 # 40</h1>
 
 <script>
-var a = 'global';
+var a = 1;
+var b = 2;
 
-function print1() {
+console.log(a);
+console.log(b);
+console.log(c);
+
+var c = 'hoisting';
+
+function test() {
+    var a = 2;
+    var b = 2;
     console.log(a);
+    console.log(b);
+    console.log(c);
+    
+
+    var c = 3;
+
 }
 
-function print2() {
-    var a = 'hi';
-    print1();
-}
+test();
 
-print1();
-print2();
 
 
 
