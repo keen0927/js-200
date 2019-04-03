@@ -7,18 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-<h1>jS 200 # 99</h1>
+
 
 <script>
     
+    let obj = {};
 
-    const numArr = [1,2,3,4,5];
+    obj.title = 'IDOL';
 
-    const result = numArr.reduce((el,n) => {
-        return el + n;
-    },0)
+    obj = Object.freeze(obj);
 
-    console.log(result);
+    obj.title2 = 'IDOL';
+
+    console.log(obj);
+
+
+
+    
+
+    // obj = Object.freeze(obj);
+
+    // obj.title = 'IDOL2';
+
+
+    
 </script>
 </body>
 </html>

@@ -7,18 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-<h1>jS 200 # 99</h1>
+
 
 <script>
     
+    const album = {
+        name: 'love yourself'
+    }
 
-    const numArr = [1,2,3,4,5];
+    album.song = 'faker love';
 
-    const result = numArr.reduce((el,n) => {
-        return el + n;
-    },0)
+    album.singer = 'BTS';
 
-    console.log(result);
+    // Object.seal(album);
+
+    album.member = 'rm';
+
+    console.log(album);
+
+    
 </script>
 </body>
 </html>

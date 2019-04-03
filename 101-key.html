@@ -7,18 +7,22 @@
     <title>Document</title>
 </head>
 <body>
-<h1>jS 200 # 99</h1>
+<h1>jS 200 # 100</h1>
 
 <script>
     
+    const obj = {
+        movie: 'Sunny',
+        music: 'Like Sugar',
+        style: 'Retro',
+        price: Infinity
+    }
 
-    const numArr = [1,2,3,4,5];
+    const arr = Object.keys(obj);
 
-    const result = numArr.reduce((el,n) => {
-        return el + n;
-    },0)
+    console.log(arr);
 
-    console.log(result);
+    
 </script>
 </body>
 </html>
