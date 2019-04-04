@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+1. 객체지향 프로그래밍 : 프로그램을 객체들로 구성하고 객체들 간에 서로 상호작용하도록 작성하는 방법<br/>
+
+2. 객체지향에서 객체란 식별 가능한 구체적인 사물 또는 추상적인 개념<br/>
+
+3. 객체는 특징적인 행동과 변경가능한 상태를 가진다.<br/>
+   - 자바스크립트에서는 함수 값으로 가지는 속성을 메소드라고 한다. 이 메소드를 특징적인 행동이라 하며 그외의 값들은 변경 가능한 상태라 볼 수 있다.<br/>
+
+4. 객체지향에서는 수많은 객체들을 공통적인 특성을 기준으로 객체를 묶어 하나의 타입으로 정의한다. 이렇게 타입을 정의하는 작업을 분류라고 하며 이는 일종의 추상화를 하는 것이다.<br/>
+
+5. 자바스크립트는 프로토타입 기반으로 객체지향 프로그래밍을 지원한다. <br/>
+
+6. 모든 객체는 다른 객체의 원형(prototype)이 될 수 있다. 특징을 묘사하는 원형 객체를 만들고 이 원형 객체에 기반하는 여러 객체들을 만들면 모두 같은 특징을 가질 수 있다.<br/>
+
+
+<script>
+
+    const studentProto = {
+        gainExp: function() {
+            this.exp++;
+        }
+    }
+
+    const harin = {
+        name: '하린',
+        age: 10,
+        exp: 0,
+        __proto__: studentProto
+    };
+
+    const bbo = {
+        name: '뽀',
+        age: 20,
+        exp: 10,
+        __proto__: studentProto
+    };
+
+    bbo.gainExp();
+    bbo.gainExp();
+
+    console.log(bbo);
+    
+
+
+
+    
+
+</script>
+
+</body>
+</html>
