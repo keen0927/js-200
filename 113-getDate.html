@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+Date.prototype.yyyymmdd = function() {
+    const yyyy = this.getFullYear();
+    const mm = this.getMonth() < 9 ? `0${this.getMonth() + 1}` : this.getMonth() + 1;    
+    const dd = this.getDate() < 10 ? `0${this.getDate()}` : this.getDate();    
+    return '' + yyyy + mm + dd;
+}
+
+const date = new Date();
+console.log(typeof (date.yyyymmdd()));
+
+</script>
+
+</body>
+</html>
