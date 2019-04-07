@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+function Teacher(name, age, subject) {
+    this.name = name;
+    this.age = age;
+    this.subject = subject;
+    this.teach = function(student) {
+        console.log(studert + ' 에게' + subject + '를 가르칩니다')
+    }
+}
+
+const jay = new Teacher('jay', 30, 'js');
+const keen = new Teacher('keen', 37, 'react');
+
+console.log(jay.constructor);
+
+console.log(jay);
+console.log(keen);
+
+</script>
+
+</body>
+</html>
