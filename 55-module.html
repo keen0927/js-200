@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+
+var namespaceA = (function(){
+    var privateVar = '비공개 변수';
+    return {
+        publicApi: function() {
+            console.log(privateVar + '에 접급 가능스~');
+        }
+    }
+})();
+
+namespaceA.publicApi();
+
+
+</script>
+
+</body>
+</html>
