@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+const str = "To lose your path is the way to find that path";
+
+const numRegExp = /[0-9]+/;
+const phoneRegExp = /\d{3}-\d{3,4}-\d{4}$/;
+
+console.log(numRegExp.test('f0'));
+console.log(numRegExp.test('test'));
+console.log(phoneRegExp.test('010-3135-3333'));
+console.log(phoneRegExp.test('020-8444-8888'));
+</script>
+
+</body>
+</html>
