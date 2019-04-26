@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+
+<script>
+
+const product2 = {
+    name: '가방2',
+    price: 3000,
+    getVAT() {
+        return this.price / 10;
+    }
+}
+
+const valueOfProduct2 = product2.getVAT();
+console.log(valueOfProduct2);
+
+const calVAT = product2.getVAT;
+
+const newCalVAT = calVAT.bind(product2);
+const VAT3 = newCalVAT();
+console.log(VAT3);
+
+
+
+
+</script>
+
+</body>
+</html>
