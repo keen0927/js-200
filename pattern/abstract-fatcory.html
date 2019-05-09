@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Hero = function() {
+            this.name = "Hero";
+        }
+        Hero.prototype.attack = function(target) {
+            console.log(`${this.name} 이(가) ${target.name} 을(를) 공격합니다`)
+        };
+        
+        // IronMan
+        var IronMan = function(){};
+        IronMan.prototype = new Hero();
+        IronMan.prototype.flying = function() {
+            console.log(`${this.name}이 날아간다.`);
+        }
+
+        // Thor
+        var Thor = function(){};
+        Thor.prototype = new Hero();
+        Thor.prototype.hammer = function() {
+            console.log(`${this.name}이 망치질한다. `);
+        }
+
+
+
+        
+
+    </script>
+</body>
+</html>
