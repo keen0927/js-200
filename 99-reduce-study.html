@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+
+// var people = [
+//     {name: 'keen', job: 'front-end developer'},
+//     {name: 'elva', job: 'front-end developer'},
+//     {name: 'aiden', job: 'back-end developer'},
+//     {name: 'arthur', job: 'back-end developer'}
+// ];
+
+// const groupBy = (objectArray, property) => {
+//     return objectArray.reduce((acc, obj) => {
+//         const key = obj[property];
+//         if(!acc[key]) {
+//             acc[key] = []
+//         }
+//         acc[key].push(obj);
+//         return acc;
+//     },{});
+// }
+
+// const groupJob = groupBy(people, 'job');
+
+var friends = [{
+  name: 'Anna',
+  books: ['Bible', 'Harry Potter'],
+  age: 21
+}, {
+  name: 'Bob',
+  books: ['War and peace', 'Romeo and Juliet'],
+  age: 26
+}, {
+  name: 'Alice',
+  books: ['The Lord of the Rings', 'The Shining'],
+  age: 18
+}];
+
+const allbooks = friends.reduce((acc, cur) => [...acc, ...cur.books],[]);
+
+console.log(allbooks);
+
+
+
+
+
+
+</script>
+</body>
+</html>
