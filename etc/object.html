@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var ape = {
+        hasThumbs: true,
+        hasTail: true,
+        swing: function() {
+            return '메달리기';
+        }
+    }    
+
+    var test = Object.create(ape);
+
+    console.log(test.hasTail);
+
+    ape.hasTail = false;
+
+    console.log(test.hasTail);
+    </script>
+    
+</body>
+</html>
