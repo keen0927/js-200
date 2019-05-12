@@ -11,24 +11,16 @@
 
 <script>
 
-const product2 = {
-    name: '가방2',
-    price: 3000,
-    getVAT() {
-        return this.price / 10;
+var namespaceA = (function(){
+    var privateVar = '비공개 변수';
+    return {
+        publicApi: function() {
+            console.log(privateVar + '에 접급 가능스~');
+        }
     }
-}
+})();
 
-const valueOfProduct2 = product2.getVAT();
-console.log(valueOfProduct2);
-
-const calVAT = product2.getVAT;
-
-const newCalVAT = calVAT.bind(product2);
-const VAT3 = newCalVAT();
-console.log(VAT3);
-
-
+namespaceA.publicApi();
 
 
 </script>

@@ -11,15 +11,13 @@
 <script>
 const str = "To lose your path is the way to find that path";
 
-const sensitiveCaseRegex = /to/;
-const ignoreAllCaseRegex = /to/gi;
-const findRangeRegex = /([a-f])\w+/i;
-const findAllRangeRegex = /([a-f])\w+/gi;
+const numRegExp = /[0-9]+/;
+const phoneRegExp = /\d{3}-\d{3,4}-\d{4}$/;
 
-console.log(str.match(sensitiveCaseRegex));
-console.log(str.match(ignoreAllCaseRegex));
-console.log(str.match(findRangeRegex));
-console.log(str.match(findAllRangeRegex));
+console.log(numRegExp.test('f0'));
+console.log(numRegExp.test('test'));
+console.log(phoneRegExp.test('010-3135-3333'));
+console.log(phoneRegExp.test('020-8444-8888'));
 </script>
 
 </body>
