@@ -8,21 +8,18 @@
 </head>
 <body>
     <script>
-    var ape = {
-        hasThumbs: true,
-        hasTail: true,
-        swing: function() {
-            return '메달리기';
-        }
-    }    
+    var hero = {
+        billearn: false
+    }
 
-    var test = Object.create(ape);
+    var avengers = Object.create(hero);
+    avengers.thor = true;
+    avengers.antman = true;
 
-    console.log(test.hasTail);
+    var tanos = Object.create(avengers);
+    console.log(tanos.thor);
+    console.log(tanos.billearn);
 
-    ape.hasTail = false;
-
-    console.log(test.hasTail);
     </script>
     
 </body>
