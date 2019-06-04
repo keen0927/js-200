@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        // var async1 = function(param, callback) { callback(param*2)}
+        // var async2 = function(param, callback) { callback(param*3)}
+        // var async3 = function(param, callback) { callback(param*4)}
+
+        // var start = 1;
+
+        // async1(start, result => {
+        //     async2(result, result => {
+        //         async3(result, result => {
+        //             console.log(result);
+        //         });
+        //     });
+        // });
+
+        // new Promise
+        // function async1 (param) {
+        //     return new Promise(function(resolve, reject) {
+        //         resolve(param*2);
+        //     });
+        // }
+
+        // function async2(param) {
+        //     return new Promise(function(resolve, reject){
+        //         resolve(param*3);
+        //     });
+        // }
+
+        // function async3(param) {
+        //     return new Promise(function(resolve, reject){
+        //         resolve(param*4);
+        //     });
+        // }
+
+        // var start = 1;
+
+        // async1(start)
+        //     .then(async2)
+        //     .then(async3)
+        //     .then(result => {
+        //         console.log('new Promise Result : ',result);
+        //     });
+
+        // Promise.resolve
+        // function async1 (param) {
+        //     return Promise.resolve(param*2)
+        // }
+
+        // function async2(param) {
+        //     return Promise.resolve(param*3)
+        // }
+
+        // function async3(param) {
+        //     return Promise.resolve(param*4)
+        // }
+
+        // var start = 1;
+
+        // async1(start)
+        //     .then(async2)
+        //     .then(async3)
+        //     .then(result => {
+        //         console.log(result);
+        //     });
+
+        function request(param) {
+            return Promise.resolve()
+                .then(function(){
+                    var xhr = new XMLHttpRequest();
+
+                    xhr.open('GET','http://google.co.kr',true);
+                    xhr.onreadystatechange = function() {
+                        if (xhr.readyState == 4 && xhr.status == 200) {
+                            return Promise.resolve(xhr.response);
+                        }
+                    }
+                    xhr.send(null);
+                });
+        }
+
+        Promise.resolve()
+            .then(request)
+            .then(result => {
+                console.log('ok');
+                console.log(result);
+            })
+        
+
+
+        
+    </script>
+</body>
+</html>
