@@ -91,7 +91,18 @@ const ddd = sample.map(item => {
   
 });
 
-const ddd2 = function(searchKeyoword) {
+// const ddd2 = function(searchKeyoword) {
+//   let temp = []
+//   for ( i = 0; i < sample.length ; i++ ) {
+//     const checking = sample[i].tags.filter(v => {return v.type === searchKeyoword}).length;
+//     if (checking) temp.push(sample[i]);
+//   }
+//   return temp
+// }
+
+// console.log(ddd2('dark'));
+
+const ddd3 = function(searchKeyoword) {
   let temp = []
   for ( i = 0; i < sample.length ; i++ ) {
     const checking = sample[i].tags.filter(v => {return v.type === searchKeyoword}).length;
