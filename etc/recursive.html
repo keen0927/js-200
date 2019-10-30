@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fakeFactorial(n) {
+            var result = 1;
+            for (var i = 1 ; i <= n ; i++) {
+                result *= i
+            }
+            return result;
+        }
+        console.log(fakeFactorial(3));
+        console.log(fakeFactorial(4));
+
+        // Recursive
+        // function factorial(n) {
+        //     if (n == 0 || n == 1) {
+        //         return 1;
+        //     }
+        //     return n * factorial(n - 1);
+        // }
+
+        // console.log(factorial(3));
+        // console.log(factorial(4));
+
+        function fact(n) {
+            return (n > 1) ? n * fact(n) - 1 : 1;
+        }
+
+        console.log(fact(3));
+
+        var sports = {
+            soccer: {member: 11, time: 90},
+            basketball: {member: 5, time: 48}
+        };
+
+        function showValues(sports) {
+            var type, obj, name;
+            for (type in sports) {
+
+            }
+        }
+
+
+        var keenFactorial = function(n) {
+            return (n > 1) ? n * keenFactorial(n) - 1 : 1;
+
+        }
+
+    </script>
+</body>
+</html>
