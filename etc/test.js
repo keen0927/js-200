@@ -1,12 +1,22 @@
-function foo() {
-    console.log(this.a);
-}
+var aa = {
+    "a": 1,
+    "b": 2,
+    "c": 3,
+};
 
-var obj = {
-    a: 2
-}
+var bb = {
+    "a": 4,
+    "b": 5,
+    "c": 6,
+    "d": 7,
+};
 
+var cc = Object.assign(aa,bb);
 
-var a = '전역';
+// console.log(cc);
 
-foo.call(obj);
+var ee = ['1','2','3','4','5','6'];
+
+ee.splice(1,0,'d');
+
+console.log(ee);

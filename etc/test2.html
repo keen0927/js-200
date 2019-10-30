@@ -8,5 +8,36 @@
 </head>
 <body>
     
+
+    <ul class="test" data-action="ddd">
+        <li><a href="#">1</a></li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <script>
+        var target = document.querySelector('.test');
+
+        target.addEventListener('click',function(e){
+            // console.log(e);
+            // if( e.target === 'li') {
+            //     console.log('li마증ㅁ');
+            // }
+            // console.log(e.currentTarget.className);
+
+            if ( e.currentTarget.dataset.action === 'ddd') {
+                console.log('111');
+            }
+
+            console.log(e.currentTarget.dataset.action)
+
+            // e.currentTarget.dataset.action === 'ddd'
+
+            // if (e.currentTarget.className === document.getElementsByTagName('ul')) {
+            //     console.log('ul');
+            // }
+        });
+    </script>
 </body>
 </html>
