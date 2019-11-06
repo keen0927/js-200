@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <li>orange</li>
+    <li>banana</li>
+    <li>watermelon</li>
+    <li>apple</li>
+  </ul>
+  
+  <script>
+    var item = [];
+
+    var solution = function(string) {
+      const tempItem = [];
+      const targeLists = document.getElementsByTagName('li');
+      for (i = 0; i < targeLists.length ; i++) {
+        tempItem.push(targeLists[i].innerText);
+      }
+      // const result = tempItem.filter(v => {
+      //   return v.indexOf(string) !== -1
+      // });
+      const result = []
+      for (i = 0; i < tempItem.length ; i++) {
+        if(tempItem[i].includes(string)) result.push(tempItem[i]);
+      }
+
+      return result;
+      
+    };
+
+    console.log(solution('c'));
+
+  </script>
+</body>
+
+</html>
