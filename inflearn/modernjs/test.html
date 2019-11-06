@@ -15,27 +15,34 @@
   </ul>
   
   <script>
-    var item = [];
+    // var item = [];
 
-    var solution = function(string) {
-      const tempItem = [];
-      const targeLists = document.getElementsByTagName('li');
-      for (i = 0; i < targeLists.length ; i++) {
-        tempItem.push(targeLists[i].innerText);
-      }
-      // const result = tempItem.filter(v => {
-      //   return v.indexOf(string) !== -1
-      // });
-      const result = []
-      for (i = 0; i < tempItem.length ; i++) {
-        if(tempItem[i].includes(string)) result.push(tempItem[i]);
-      }
+    // var solution = function(string) {
+    //   const tempItem = [];
+    //   const targeLists = document.getElementsByTagName('li');
+    //   for (i = 0; i < targeLists.length ; i++) {
+    //     tempItem.push(targeLists[i].innerText);
+    //   }
+    //   // const result = tempItem.filter(v => {
+    //   //   return v.indexOf(string) !== -1
+    //   // });
+    //   const result = []
+    //   for (i = 0; i < tempItem.length ; i++) {
+    //     if(tempItem[i].includes(string)) result.push(tempItem[i]);
+    //   }
 
-      return result;
+    //   return result;
       
-    };
+    // };
 
-    console.log(solution('c'));
+    // console.log(solution('c'));
+
+    const list = document.querySelectorAll('li');
+    const listArray = Array.from(list);
+    const stringArray = listArray.filter(v => {
+      return v.innerText.includes('e');
+    });
+    console.log(stringArray);
 
   </script>
 </body>
