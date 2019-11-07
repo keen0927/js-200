@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+  <div>가나다라마바사</div>
+  
+  <script>
+    var news = [
+      {
+        "title": "tvn",
+        "newslist": [
+          "가나다라마바사",
+          "123456",
+        ]
+      },
+      {
+        "title": "KBS",
+        "newslist": [
+          "아자차카타파하",
+          "abcde",
+        ]
+      },      
+    ];
+
+    // var newsList = function([,{newslist}]) {
+    //   console.log(newsList);
+    // }
+
+    // function newsList([,{newslist}]) {
+    //   console.log(newslist)
+    // }
+
+    var newsList = function([{newslist}]) {
+      console.log(newslist)
+    }
+
+    newsList(news);
+
+    document.querySelector('div').addEventListener('click',function(e){
+      console.log(e)
+    });
+  </script>
+</body>
+
+</html>
