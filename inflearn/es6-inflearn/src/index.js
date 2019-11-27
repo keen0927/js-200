@@ -1,7 +1,3 @@
-console.log('START WEBPACK');
+import main from './main';
 
-
-const test = () => {
-  const name = 'keen';
-  console.log(`name : ${name}`);
-};
+const myBlog = new main();
