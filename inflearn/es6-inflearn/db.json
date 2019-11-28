@@ -1,0 +1,302 @@
+{
+    "api": {
+        "beers": [{
+                "id": "1",
+                "name": "Miller",
+                "image": "http://asd4.woobi.co.kr/images/01-miller.jpg",
+                "tags": [{
+                        "key": "lager",
+                        "name": "라거"
+                    },
+                    {
+                        "key": "imported",
+                        "name": "수입맥주"
+                    }
+                ],
+                "price": "3,000",
+                "stock": "6"
+            },
+            {
+                "id": "2",
+                "name": "Guinness",
+                "image": "http://asd4.woobi.co.kr/images/02-guiness.jpg",
+                "tags": [{
+                        "key": "dark",
+                        "name": "흑맥주"
+                    },
+                    {
+                        "key": "imported",
+                        "name": "수입맥주"
+                    }
+                ],
+                "price": "3,000",
+                "stock": "4"
+            },
+            {
+                "id": "3",
+                "name": "BLUE MOON",
+                "image": "http://asd4.woobi.co.kr/images/03-bluemoon.jpg",
+                "tags": [{
+                        "key": "mil",
+                        "name": "밀맥주"
+                    },
+                    {
+                        "key": "imported",
+                        "name": "수입맥주"
+                    }
+                ],
+                "price": "3,000",
+                "stock": "0"
+            },
+            {
+                "id": "4",
+                "name": "TSINGTAO",
+                "image": "http://asd4.woobi.co.kr/images/04-tsingtao.jpg",
+                "price": "3,000",
+                "tags": [{
+                        "key": "lager",
+                        "name": "라거"
+                    },
+                    {
+                        "key": "imported",
+                        "name": "수입맥주"
+                    }
+                ],
+                "stock": "8"
+            },
+            {
+                "id": "5",
+                "name": "Kloud",
+                "image": "http://asd4.woobi.co.kr/images/05-kloud.jpg",
+                "tags": [{
+                        "key": "lager",
+                        "name": "라거"
+                    },
+                    {
+                        "key": "domestic",
+                        "name": "국산맥주"
+                    }
+                ],
+                "price": "2,700",
+                "stock": "7"
+            },
+            {
+                "id": "6",
+                "name": "Tiger",
+                "image": "http://asd4.woobi.co.kr/images/06-tiger.jpg",
+                "tags": [{
+                        "key": "lager",
+                        "name": "라거"
+                    },
+                    {
+                        "key": "imported",
+                        "name": "수입맥주"
+                    }
+                ],
+                "price": "3,000",
+                "stock": "4"
+            },
+            {
+                "id": "7",
+                "name": "FiLite",
+                "image": "http://asd4.woobi.co.kr/images/07-filite.jpg",
+                "tags": [{
+                        "key": "lager",
+                        "name": "라거"
+                    },
+                    {
+                        "key": "domestic",
+                        "name": "국산맥주"
+                    }
+                ],
+                "price": "1,600",
+                "stock": "5"
+            },
+            {
+                "id": "8",
+                "name": "CASS",
+                "image": "http://asd4.woobi.co.kr/images/08-cass.jpg",
+                "tags": [{
+                        "key": "lager",
+                        "name": "라거"
+                    },
+                    {
+                        "key": "domestic",
+                        "name": "국산맥주"
+                    }
+                ],
+                "price": "1,800",
+                "stock": "7"
+            },
+            {
+                "id": "9",
+                "name": "KOZEL",
+                "image": "http://asd4.woobi.co.kr/images/09-kozel.jpg",
+                "tags": [{
+                        "key": "dark",
+                        "name": "흑맥주"
+                    },
+                    {
+                        "key": "imported",
+                        "name": "수입맥주"
+                    }
+                ],
+                "price": "3,000",
+                "stock": "2"
+            },
+            {
+                "id": "10",
+                "name": "Hite Extra Cold",
+                "image": "http://asd4.woobi.co.kr/images/10-hite.jpg",
+                "tags": [{
+                        "key": "lager",
+                        "name": "라거"
+                    },
+                    {
+                        "key": "domestic",
+                        "name": "국산맥주"
+                    }
+                ],
+                "price": "2,000",
+                "stock": "4"
+            },
+            {
+                "id": "11",
+                "name": "SAN MIGUEL",
+                "image": "http://asd4.woobi.co.kr/images/11-sanmiguel.jpg",
+                "tags": [{
+                        "key": "pale",
+                        "name": "페일 필스너"
+                    },
+                    {
+                        "key": "imported",
+                        "name": "수입맥주"
+                    }
+                ],
+                "price": "3,000",
+                "stock": "5"
+            },
+            {
+                "id": "12",
+                "name": "CASS LIGHT",
+                "image": "http://asd4.woobi.co.kr/images/12-casslight.jpg",
+                "tags": [{
+                        "key": "lager",
+                        "name": "라거"
+                    },
+                    {
+                        "key": "domestic",
+                        "name": "국산맥주"
+                    }
+                ],
+                "price": "1,800",
+                "stock": "4"
+            },
+            {
+                "id": "13",
+                "name": "TERRA",
+                "image": "http://asd4.woobi.co.kr/images/13-terra.jpg",
+                "tags": [{
+                        "key": "lager",
+                        "name": "라거"
+                    },
+                    {
+                        "key": "domestic",
+                        "name": "국산맥주"
+                    }
+                ],
+                "price": "2,400",
+                "stock": "6"
+            },
+            {
+                "id": "14",
+                "name": "Cafri",
+                "image": "http://asd4.woobi.co.kr/images/14-cafri.jpg",
+                "tags": [{
+                        "key": "lager",
+                        "name": "라거"
+                    },
+                    {
+                        "key": "domestic",
+                        "name": "국산맥주"
+                    }
+                ],
+                "price": "2,200",
+                "stock": "8"
+            },
+            {
+                "id": "15",
+                "name": "1664",
+                "image": "http://asd4.woobi.co.kr/images/15-1664.jpg",
+                "tags": [{
+                        "key": "mil",
+                        "name": "밀맥주"
+                    },
+                    {
+                        "key": "imported",
+                        "name": "수입맥주"
+                    }
+                ],
+                "price": "3,000",
+                "stock": "8"
+            },
+            {
+                "id": "16",
+                "name": "Heineken",
+                "image": "http://asd4.woobi.co.kr/images/16-heineken.jpg",
+                "tags": [{
+                        "key": "lager",
+                        "name": "라거"
+                    },
+                    {
+                        "key": "imported",
+                        "name": "수입맥주"
+                    }
+                ],
+                "price": "3,000",
+                "stock": "5"
+            },
+            {
+                "id": "17",
+                "name": "Hoegaarden",
+                "image": "http://asd4.woobi.co.kr/images/17-Hoegaarden.jpg",
+                "tags": [{
+                        "key": "mil",
+                        "name": "밀맥주"
+                    },
+                    {
+                        "key": "imported",
+                        "name": "수입맥주"
+                    }
+                ],
+                "price": "3,000",
+                "stock": "5"
+            }
+        ],
+        "tags": [{
+                "key": "lager",
+                "name": "라거"
+            },
+            {
+                "key": "pale",
+                "name": "페일 필스너"
+            },
+            {
+                "key": "mil",
+                "name": "밀맥주"
+            },
+            {
+                "key": "dark",
+                "name": "흑맥주"
+            },
+            {
+                "key": "domestic",
+                "name": "국산맥주"
+            },
+            {
+                "key": "imported",
+                "name": "수입맥주"
+            }
+        ]
+    }
+}
