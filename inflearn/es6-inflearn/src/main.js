@@ -6,24 +6,31 @@ class Blog {
   }
 
   setInitData(dataURL) {
-    this.getData(dataURL);
+    this.getData(dataURL, this.insertPosts);
   }
 
-  getData(dataURL) {
+  getData(dataURL, fn) {
     const oReq = new XMLHttpRequest();
 
     oReq.addEventListener('load', () => {
       const list = JSON.parse(oReq.responseText);
 
       const listBeears = list.beers;
-
-      listBeears.forEach( v => {
-        console.log(v.name);
-      })
+      fn(listBeears);
     });
 
     oReq.open('GET',dataURL);
     oReq.send();
+  }
+
+  insertPosts(list) {
+    const target = document.querySelector('.list ul');
+
+    list.forEach(v => {
+      target.innerHTML += `
+        <li>${v.name}</li>
+      `;
+    });
   }
 }
 
