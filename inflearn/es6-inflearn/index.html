@@ -8,18 +8,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="./src/assets/css/style.css">
     <style>
-        .list {
+        ul {
             display: flex;
+            margin: 0;
+            padding: 0;
         }
         ul li {
-            width: 200px;
-            height: 200px;
+            width: 150px;
+            height: 150px;
             border: purple;
+            margin: 0;
+            padding: 0;
+            border: 1px solid rgba(0,0,0,0.5);
+            list-style: none;
+        }
+        ul li div {
+            color: plum;
         }
     </style>
 </head>
 <body>
-    <section><button>불러오기</button></section>
+    <section><button class="start">불러오기</button></section>
 
     <section class="list">
         <ul></ul>

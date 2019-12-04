@@ -1,8 +1,27 @@
 class Blog {
   constructor() {
     console.log('Blog Start');
-    const dataURL = "http://localhost:3000/api"
-    this.setInitData(dataURL);
+    this.registerEvents();
+    this.likedSet = new Set();
+  }
+
+  registerEvents() {
+    const startButton = document.querySelector('.start');
+    const dataURL = "http://localhost:3000/api";
+
+    const blogList = document.querySelector('.list > ul');
+    startButton.addEventListener('click', () => {
+      this.setInitData(dataURL);
+    });
+
+    blogList.addEventListener('click',({target}) => {
+      const targetClassName = target.className;
+      console.log(targetClassName);
+      if (targetClassName !== "like") return;
+      const postTitle = target.previousElementSibling.textContent;
+      this.likedSet.add(postTitle);
+      console.log(this.likedSet);
+    });
   }
 
   setInitData(dataURL) {
@@ -28,7 +47,10 @@ class Blog {
 
     list.forEach(v => {
       target.innerHTML += `
-        <li>${v.name}</li>
+        <li>
+          <a href="#"> ${v.name}</a>
+          <div class="like">찜하기</div>
+        </li>
       `;
     });
   }
