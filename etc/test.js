@@ -1,22 +1,32 @@
-var aa = {
-    "a": 1,
-    "b": 2,
-    "c": 3,
-};
+// document.querySelector('.input-test').addEventListener('input',({target}) => {
+//     console.log(target.value);
+// })
 
-var bb = {
-    "a": 4,
-    "b": 5,
-    "c": 6,
-    "d": 7,
-};
+// 디바운싱
+// var timer;
 
-var cc = Object.assign(aa,bb);
+// document.querySelector('.input-test').addEventListener('input',e => {
+//     console.log(timer);
 
-// console.log(cc);
+//     if (timer) {
+//         clearTimeout(timer);
+//     };
+//     timer = setTimeout(() => {
+//         console.log(`요청 ${e.target.value}`);
+//     }, 200);
+// });
 
-var ee = ['1','2','3','4','5','6'];
+// 쓰로틀링
+var timer;
 
-ee.splice(1,0,'d');
-
-console.log(ee);
+document.querySelector('.input-test').addEventListener('input',e => {
+    console.log(timer);
+    if (!timer) {
+        timer = setTimeout(() => {
+            console.log(timer);
+            timer = null;
+            console.log(timer);
+            console.log(`요청 ${e.target.value}`);
+        },500)
+    }
+});
