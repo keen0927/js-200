@@ -21,12 +21,37 @@ class Blog {
 
     this.blogList.addEventListener('click',({target}) => {
       const targetClassName = target.className;
-      console.log(targetClassName);
-      if (targetClassName !== "like") return;
       const postTitle = target.previousElementSibling.textContent;
-      this.likedSet.add(postTitle);
-      console.log(this.likedSet);
+
+      if (targetClassName === "like") {
+
+        target.className = 'unlike';
+        target.innerHTML = '노찜';
+        this.likedSet.add(postTitle);
+        console.log(this.likedSet);
+      } else {
+        target.className = 'like';
+        target.innerHTML = '찜하기';
+        console.log(postTitle);
+        this.likedSet.delete(postTitle);
+        console.log(this.likedSet);
+      }
+
+      this.updateLikedList();
     });
+  }
+
+  updateLikedList() {
+    const target = document.querySelector('.like-list');
+    let likedState = "";
+
+    this.likedSet.forEach(v => {
+      likedState += `<li>${v}</li>`;
+      console.log(`likedState : ${likedState}`);
+    });
+
+    target.innerHTML = likedState;
+
   }
 
   setInitData(dataURL) {
@@ -49,7 +74,7 @@ class Blog {
 
   insertPosts(list) {
     list.forEach(v => {
-      debugger;
+      // debugger;
       this.blogList.innerHTML += `
         <li>
           <a href="#"> ${v.name}</a>

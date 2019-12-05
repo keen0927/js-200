@@ -22,8 +22,19 @@
             border: 1px solid rgba(0,0,0,0.5);
             list-style: none;
         }
-        ul li div {
-            color: plum;
+        
+        .like-list {
+            flex-direction: column;
+        }
+        .like-list li{
+            width: auto;
+            height: auto;
+        }
+        .like {
+            color: skyblue;
+        }
+        .unlike {
+            color: red;
         }
     </style>
 </head>
@@ -36,7 +47,7 @@
 
     <section>
         <h4>내 찜 목록</h4>
-        <ul></ul>
+        <ul class="like-list"></ul>
     </section>
 
     <!-- JS -->
