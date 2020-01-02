@@ -8,7 +8,26 @@
 </head>
 <body>
     TEST
-    <input type="text" class="input-test">
-    <script src="./test.js"></script>
+    <script>
+        function a() {
+            console.log('스택1');
+            
+
+            function b() {
+            console.log('스택2');
+                console.trace();
+            }
+            b();
+        }
+        a();
+
+        function c() {
+            console.log('c');
+        }
+
+        setTimeout(function(){
+            c();
+        },0);
+    </script>
 </body>
 </html>
