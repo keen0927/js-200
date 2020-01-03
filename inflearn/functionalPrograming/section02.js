@@ -8,28 +8,3 @@ var users = [
   { id:7, name: 'Hazel', age: 28 },
   { id:8, name: 'Cash', age: 32 }
 ]
-
-// var tempUsers = [];
-// for (i = 0; i < users.length ; i++) {
-//   if (users[i].age >= 30) {
-//     tempUsers.push(users[i])
-//   }
-// }
-
-function _filter(users, predicate) {
-  var newList = [];
-  for (i = 0; i < users.length ; i++) {
-    if (predicate(users[i])) {
-      newList.push(users[i])
-    }
-  }
-  return newList;
-} 
-
-console.log(
-  _filter(users, function(user) {return user.age >= 30})
-)
-
-console.log(
-  _filter(users, function(user) {return user.age <= 30})
-)
