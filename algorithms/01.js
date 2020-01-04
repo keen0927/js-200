@@ -28,3 +28,10 @@
 
 
 
+
+// const numbers = [5,9,7,10];
+// const solutionNumber = 4;
+
+// const solution = (numbers, solutionNumber) => {
+//   return numbers.filter(v => v % solutionNumber === 0)
+// };
