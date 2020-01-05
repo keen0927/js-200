@@ -35,3 +35,29 @@
 // const solution = (numbers, solutionNumber) => {
 //   return numbers.filter(v => v % solutionNumber === 0)
 // };
+
+
+
+
+
+
+// 3과 5가 주어지면 3 + 4 + 5를 리턴하면된다
+// const solution = (a, b) => {
+//   const tempArray = [];
+//   for (i = a ; i <= b ; i++) {
+//     tempArray.push(i);
+//   }
+//   const result = tempArray.reduce((pre, cur) => pre + cur);
+//   return result;
+// }
+
+// const solution = (a, b) => {
+//   a > b && ([a,b] = [b,a]);
+//   return Array(b - a + 1).fill().map((v, i) => a + i).reduce((a, c) => a + c);
+// }
+
+// const solution = (a,b) => {
+//   return (a + b) * ((a > b ? a - b : b - a) + 1) / 2;
+// }
+
+// console.log(solution(3,6));
