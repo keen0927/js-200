@@ -61,3 +61,25 @@
 // }
 
 // console.log(solution(3,6));
+
+
+// 가우스 두수의 합 * 두수의 빼기 + 1 / 2
+// const solution = (a,b) => {
+//   return (a + b) * (( a > b ? a - b : b - a ) + 1) / 2
+// }
+
+// console.log(solution(1,3));
+
+// const solution = (strings, n) => {
+//   return strings.sort((p, c) => p[n] === c[n] ? p.localeCompare(c) : p[n].localeCompare(c[n]))
+// }
+
+// console.log(solution(['box','apple','fly'],0));
+
+// const stringArr = ['apple','lemon','melon','strawberry'];
+
+// const solution = ((strings, n) => {
+//   return strings.sort((a,b) => a.localeCompare(b))
+// });
+
+// console.log(solution(stringArr,1));
