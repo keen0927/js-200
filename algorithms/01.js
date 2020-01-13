@@ -83,3 +83,12 @@
 // });
 
 // console.log(solution(stringArr,1));
+
+
+// const solution = (string) => {
+//   const p = string.split('').filter(v => ['p','P'].includes(v));
+//   const y = string.split('').filter(v => ['y','Y'].includes(v));
+//   return p.length === y.length
+// }
+
+// console.log(solution('kkeeppyy'));
