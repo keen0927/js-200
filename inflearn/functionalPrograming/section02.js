@@ -7,29 +7,39 @@ var users = [
   { id:6, name: 'Aiden', age: 35 },
   { id:7, name: 'Hazel', age: 28 },
   { id:8, name: 'Cash', age: 32 }
-]
+];
 
-// var tempUsers = [];
-// for (i = 0; i < users.length ; i++) {
+// let temp_users = [];
+// for (var i = 0; i < users.length ; i++) {
 //   if (users[i].age >= 30) {
-//     tempUsers.push(users[i])
+//     temp_users.push(users[i])
 //   }
 // }
+// console.log(temp_users);
 
-function _filter(users, predicate) {
-  var newList = [];
-  for (i = 0; i < users.length ; i++) {
-    if (predicate(users[i])) {
-      newList.push(users[i])
-    }
+
+
+// let names = [];
+// for (var i = 0; i < temp_users.length ; i++) {
+//   names.push(temp_users[i].name);
+// }
+// console.log(names);
+
+let user_under_30 = [];
+
+for (var i = 0; i < users.length ; i++) {
+  if(users[i].age < 30) {
+    user_under_30.push(users[i])
   }
-  return newList;
-} 
+}
 
-console.log(
-  _filter(users, function(user) {return user.age >= 30})
-)
+let ages = [];
 
-console.log(
-  _filter(users, function(user) {return user.age <= 30})
-)
+for (var i = 0; i < user_under_30.length ; i++) {
+  ages.push(user_under_30[i].name);
+}
+
+console.log(`user_under_30 : ${JSON.stringify(user_under_30)}`);
+console.log(user_under_30);
+
+console.log(ages)
