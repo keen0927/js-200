@@ -7,4 +7,3 @@ var users = [
   { id:6, name: 'Aiden', age: 35 },
   { id:7, name: 'Hazel', age: 28 },
   { id:8, name: 'Cash', age: 32 }
-]
