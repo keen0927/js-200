@@ -8,7 +8,27 @@
 
 // # CyclicRotation
 // function solution(A, K) {
-//   let newArr = [];
-//   newArr = A.splice(K).concat(A.slice(0,K));
-//   return newArr;
+//   if (!A.length) {
+//       return [];
+//   }
+  
+//   for (let i = 0 ; i < K ; i++) {
+//       A.unshift(A.pop());
+//   }
+  
+//   return A;
+// }
+
+// # OddOccurrencesInArray
+// function solution(A) {
+//   let obj = {};
+//   for (let i = 0; i < A.length ; i++) {
+//     let value = A[i];
+//     if (obj[value] === undefined) {
+//       obj[value] = value;
+//     } else {
+//       delete obj[value];
+//     }
+//   }
+//   return Object.values(obj)[0];
 // }
