@@ -7,35 +7,87 @@
     <title>Document</title>
 </head>
 <body>
-<h1>jS 200 # 44</h1>
-
+1
 <script>
 
+// function closure2() {
+//     let a = 0;
+//     return {
+//         increment () {
+//             a++;
+//         },
+//         getCount () {
+//             return a;
+//         }
+//     }
+// }
 
-function createClosure() {
-    var a = 0;
-    return {
-        increment: function() {
-            a++;
-        },
-        getCount: function() {
-            return a;
-        }
-    }
+// // let ddd = closure();
+// // let countClosure = closure2();
+// // let countClosure2 = closure2();
+// // countClosure.increment()
+// // countClosure.increment()
+// // countClosure.increment()
+// // console.log(countClosure.getCount());
+
+// let countClosure = closure2();
+// let countClosure2 = closure2();
+
+// countClosure.increment();
+// countClosure.increment();
+// const ddd = countClosure.getCount();
+// console.log('첫번쨰 클로져 : 2번 함 : ', ddd);
+
+// countClosure2.increment();
+// countClosure2.increment();
+// countClosure2.increment();
+// countClosure2.increment();
+// const eee = countClosure2.getCount();
+// console.log('두번쨰 클로져 : 4번 함 : ', eee);
+
+
+
+// function Hello(name) {
+//     this._name = name;
+// }
+
+// Hello.prototype.say = function() {
+//     console.log('hello, ' + this._name);
+// }
+
+// var hello1 = new Hello('ㅋㅋ1');
+// var hello2 = new Hello('ㅋㅋ2');
+// var hello3 = new Hello('ㅋㅋ3');
+
+// hello1.say();
+// hello2.say();
+// hello3.say();
+
+// hello1._name = 'aaa';
+
+// hello1.say();
+
+
+// var i;
+// for (i = 0; i < 10; i++) {
+//   (function(j) {
+//     setTimeout(function() {
+//       console.log(j);
+//     }, 1000);
+//   })(i);
+// }
+
+function solution(arr) {
+
+    if (arr === undefined) return -1;
+
+    const temp = Math.min(...arr);
+    const result = arr.filter(arr => arr !== temp);
+    console.log('result.length : ',result.length);
+    return result.length ? result : -1;
 }
 
-var count1 = createClosure();
-var count2 = createClosure();
-
-count1.increment();
-count1.increment();
-
-
-count2.increment();
-
-
-console.log(count1.getCount());
-console.log(count2.getCount());
+console.log(solution([1]));
 
 </script>
 
