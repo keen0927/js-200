@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <ul>
+        <li>Item:
+            <ol>
+                <li>Point:
+                    <div>
+                        <ul>
+                            <li>elem1</li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </li>
+        <li>elem2</li>
+    </ul>
+    <ul>
+        <li>simple list1</li>
+    </ul>
+    <ul>
+    </ul>
+
+    <ol>
+        <li></li>
+    </ol>
+
+    <div>
+        <li></li>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+    <script>
+
+
+
+function solution(A, K){
+
+    // 최대값을 찾는다
+    const charMaxLength = String(Math.max(...A)).length;
+
+    console.log(charMaxLength);
+
+}
+
+
+solution([4,35,80,123,12345,44,8,5,24,3],4);
+
+
+    </script>
+</body>
+
+</html>
