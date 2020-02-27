@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+<script>
+
+    // ES 2016 #1 include boolean
+    // const ddd = ['a','b','c'];
+    // console.log(ddd.includes('a'));
+
+    // ES 2016 #2 제곱
+    // let num = 2;
+    // num **= 10;
+    // console.log(num);
+
+    // ES 2017 #1 string padding
+    // const text = '2월';
+    // const text2 = '12월';
+    // console.log(text.padStart(3,'0'));  // 1월과 01월 과 같이 길이를 맞춰야할 경우
+    // console.log(text2);
+
+    // ES 2017 #2 object values()
+    // const obj1 =  {name: 'keen', age: '38'};
+    // const result = Object.values(obj1);
+    // console.log(result);
+
+    // ES 2017 async / await
+
+    // ES 2018 Rest/Spread Properties // 객체에서도 spread가 가능해짐
+    
+    // ES 2018 promise finally
+    // Promise.resolve('resolve')
+    //     .then(res => console.log('success'))
+    //     .catch(err => console.log('fail'))
+    //     .finally(() => console.log('finally'))
+
+    // ES 2019 trimStart, trimEnd
+    // const test = ' 그키킼 ';
+    // console.log(ddd.trimEnd());
+    // console.log(ddd.trimStart());
+
+    // ES 2019 optionca catch binding
+    // try {
+
+    // } catch {
+
+    // }
+
+    // ES 2029 fromEntries entries로 만든 배열을 다시 객체로 만들어 준다.
+    // const arr = [1,2,3];
+
+    // const map = arr.map(v => [v]);
+    // const flatMap = arr.flatMap(v => [v]);
+
+    // console.log(map);
+    // console.log(map.flat());
+
+    // console.log(flatMap)
+
+    // ES 2020 #1 Dynamic Import import를 동적으로 할 수 있게 됨.abs
+
+    // ES 2020 #2 BigInt #2 숫자뒤에 n이 붙는게 특징
+    // const bigInt = 239402934802398409238409238409238049824n;
+    // const result = bigInt + 10n;
+    // console.log(result);
+
+    // ES 2020 #3 promise.allSettled  all은 모두 성공해야 했지만 allSettled는 도중에 실패되도 모든 실행이 가능
+    // const p1 = new Promise((resolve, reject) => resolve('p1 ressolve'));
+    // const p2 = new Promise((resolve, reject) => resolve('p2 ressolve'));
+    // const p3 = new Promise((resolve, reject) => reject('p3, reject'));
+
+    // Promise.all([p1, p2, p3])
+    //     .then(res => console.log(res))
+    //     .catch(err => console.log(err));
+
+    // Promise.allSettled([p1,p2,p3])
+    //     .then(res => console.log(res))
+    //     .catch(err => console.log(err))
+
+    // ES 2020 #4 optional chaining
+    // const foo = {
+    //     a: {
+    //         b: true
+    //     }
+    // }
+
+    // console.log(foo.a.b);
+    // console.log(foo.a?.b)
+</script>
+
+</body>
+
+</html>
